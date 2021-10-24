@@ -14,10 +14,10 @@ public class Array {
         int sum = 0;
 
         for (int i = 0; i < 10; i++) {
-            // считываем введенный пользователем элемент в массив
+
             array[i] = scan.nextInt();
         }
-        // проходим по всем элементов массива и суммируем каждое число
+
         for (int num : array) {
             sum = sum + num;
         }
@@ -39,17 +39,17 @@ public class Array {
     // метод пузырьковой сортировки
     public static void bubbleSort(int[] num) {
         int j;
-        boolean flag = true;   // устанавливаем наш флаг в true для первого прохода по массиву
-        int temp;   // вспомогательная переменная
+        boolean flag = true;
+        int temp;
 
         while (flag) {
-            flag = false;    // устанавливаем флаг в false в ожидании возможного свопа (замены местами)
+            flag = false;
             for (j = 0; j < num.length - 1; j++) {
-                if (num[j] > num[j + 1]) { // измените на > для сортировки по возрастанию
-                    temp = num[j];         // меняем элементы местами
+                if (num[j] > num[j + 1]) {
+                    temp = num[j];
                     num[j] = num[j + 1];
                     num[j + 1] = temp;
-                    flag = true;  // true означает, что замена местами была проведена
+                    flag = true;
                 }
             }
         }
