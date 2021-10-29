@@ -15,7 +15,6 @@ public class Anagram {
         abc = abc.toLowerCase();
         cba = cba.toLowerCase();
 
-
         if(abc.length() == cba.length()) {
 
 
