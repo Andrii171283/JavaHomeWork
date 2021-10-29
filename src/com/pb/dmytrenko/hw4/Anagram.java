@@ -15,19 +15,17 @@ public class Anagram {
         abc = abc.toLowerCase();
         cba = cba.toLowerCase();
 
-        // check if length is same
+
         if(abc.length() == cba.length()) {
 
-            // convert strings to char array
+
             char[] charArray1 = abc.toCharArray();
             char[] charArray2 = cba.toCharArray();
 
-            // sort the char array
+
             Arrays.sort(charArray1);
             Arrays.sort(charArray2);
 
-            // if sorted char arrays are same
-            // then the string is anagram
             boolean result = Arrays.equals(charArray1, charArray2);
 
             if(result) {
